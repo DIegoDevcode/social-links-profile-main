@@ -1,5 +1,5 @@
 :root{
-    --Dark-grey: #1E1E1E;
+    --Dark-grey: #1F1F1F;
     --Off-Black: #141414;
     --Green: #C4F82A;
     --Grey: #333333;
@@ -8,42 +8,51 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 body{
     background-color: var(--Off-Black);
+    font-family: "Inter", sans-serif;
 }
+
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 130px;
 }
 
-.background-Cuadrado{
-    width: 450px;
-    background-color: var(--Dark-grey);
-    text-align: center;
-}
-
-.background-Cuadrado h3{
+a{
     color: white;
+}
+.background-Cuadrado {
+    width: 380px;
+    text-align: center;
+    background-color: var(--Dark-grey);
+}
+
+.background-Cuadrado h3,
+.background-Cuadrado h4,
+.background-Cuadrado p {
     padding: 10px;
     font-size: 14px;
 }
 
-.background-Cuadrado h4{
-    padding: 10px;
-    font-size: 14px;
+.background-Cuadrado h3 {
+    color: white;
+}
+
+.background-Cuadrado h4 {
     color: var(--Green);
 }
 
-.background-Cuadrado p{
-    padding: 10px;
-    font-size: 14px;
-    color: var(--Grey);
+.background-Cuadrado p {
+    color: white;
+    font-weight: 400;
 }
+
 .container-image{
     display: flex;
     justify-content: center;
@@ -56,6 +65,29 @@ main{
     object-fit: cover;
     border-radius: 50%;
 }
-p{
-    font-size: 14px;
+
+
+.button-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.button-hover{
+    width: 300px;
+    background-color: var(--Grey);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+.button-hover:hover{
+    background-color: var(--Green);
+}
+
+a:hover{
+    color: #000;
 }
